@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Motion Pilot",
+  "version": "1.0",
+  "description": "Control the scroll using hand gestures through the camera",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Motion Pilot"
+  },
+  "background": {
+    "service_worker": "src/background/index.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/index.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["**/*.js", "**/*.wasm", "**/*.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

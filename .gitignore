@@ -1,0 +1,84 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.cache/
+.temp/
+*.tsbuildinfo
+
+# Chrome Extension build artifacts
+*.zip
+*.crx
+
+# Logs
+logs
+*.log
+log/
+*.pid
+*.seed
+*.pid.lock
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+*.lcov
+
+# ESLint
+.eslintcache
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# JetBrains IDEs
+*.iml
+*.ipr
+*.iws
+out/
+
+# Safari extension artifacts
+*.webextension
+*.webplugin
+
+# Git hooks
+.husky/_
+
+# Playwright / Cypress / Puppeteer
+playwright-report/
+cypress/screenshots/
+cypress/videos/
+.cypress/
+
+# Misc
+*.tgz
+*.lock-wscript
+*.orig
